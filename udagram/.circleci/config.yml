@@ -10,13 +10,12 @@ jobs:
     docker:
       # the base image can run most needed actions with orbs
       - image: "cimg/node:14.15"
-    working_directory: ~/nd0067-c4-deployment-process-project-starter/udagram
+    # working_directory: ~/nd0067-c4-deployment-process-project-starter/udagram
     steps:
       # install node and checkout code
       - node/install:
           node-version: "14.15"
-      - checkout:
-          path: ~/nd0067-c4-deployment-process-project-starter
+      - checkout
       - aws-cli/setup
       # Use root level package.json to install dependencies in the frontend app
       - run:
