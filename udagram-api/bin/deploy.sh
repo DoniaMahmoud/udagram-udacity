@@ -1,4 +1,5 @@
-# eb init Udacityapp-app --region us-east-1 --platform node.js
-# eb create --sample Udacityapp-environment
-# eb use Udacityapp-environment
-# eb setenv 
+eb init Udacityapp-app --region us-east-1 --platform node.js
+eb create --sample Udacityapp-environment
+eb use Udacityapp-environment
+eb setenv AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID AWS_BUCKET=$AWS_BUCKET AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION AWS_PROFILE=$AWS_PROFILE AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY DB_PORT=$DB_PORT JWT_SECRET=$JWT_SECRET PORT=$PORT POSTGRES_DB=$POSTGRES_DB POSTGRES_HOST=$POSTGRES_HOST POSTGRES_PASSWORD=$POSTGRES_PASSWORD POSTGRES_USER=$POSTGRES_USER POSTGRES_USERNAME=$POSTGRES_USERNAME RDS_DIALECT=$RDS_DIALECT URL=$URL
+eb deploy
