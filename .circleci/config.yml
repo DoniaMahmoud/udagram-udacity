@@ -1,5 +1,5 @@
 version: 2.1
-# working_directory: ~/udagram
+working_directory: ~/nd0067-c4-deployment-process-project-starter
 orbs:
   # orgs contain basc recipes and reproducible actions (install node, aws, etc.)
   node: circleci/node@5.0.2
