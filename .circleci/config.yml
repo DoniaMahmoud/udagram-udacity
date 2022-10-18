@@ -1,5 +1,5 @@
 version: 2.1
-working_directory: ~/udagram
+# working_directory: ~/udagram
 orbs:
   # orgs contain basc recipes and reproducible actions (install node, aws, etc.)
   node: circleci/node@5.0.2
