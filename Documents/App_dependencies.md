@@ -1,10 +1,3 @@
-## Infrastructure Description:
-
--This is a full stach application composed of udagram-frontend as the Frontend App and udagram-api as the Backend App
--The Frontend is angular application hosted on AWS S3 Bucket
--The Backend is Node Js application hosted on Elastic Beanstalk
--The database is PostgreSQL database hosted on AWS RDS
-
 ## Dependencies:
 
 #### Frontend:
@@ -89,15 +82,3 @@
 "ts-node-dev": "^1.0.0-pre.32",
 "typescript": "^3.9.10"
 }
-
-## Pipeline Process:
-
--First, circle ci is configured with your github repo
--Any push to the main branch will make circle ci run the predefined scripts
-
-- All scripts are run for both Frontend and Backend:
-  - Installing Dependencies
-  - Setting up Elastic Beanstalk and S3 Bucket
-  - Build both apps
-  - Deploy both apps
-- Finally, the frontend and backend are deployed on AWS if the circle ci status is success
